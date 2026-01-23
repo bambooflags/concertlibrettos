@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bambooflags.github.io/concertlibrettos/sitemap.xml

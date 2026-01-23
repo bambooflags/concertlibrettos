@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://bambooflags.github.io/concertlibrettos/</loc>
+        <lastmod>2026-01-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://bambooflags.github.io/concertlibrettos/librettos/2026-01/libretto_20260108_popelka.pdf</loc>
+        <lastmod>2026-01-08</lastmod>
+        <changefreq>never</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://bambooflags.github.io/concertlibrettos/librettos/2026-01/libretto_20260116_petrenko.pdf</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>never</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://bambooflags.github.io/concertlibrettos/librettos/2026-01/libretto_20260122_shani.pdf</loc>
+        <lastmod>2026-01-22</lastmod>
+        <changefreq>never</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://bambooflags.github.io/concertlibrettos/librettos/2026-01/libretto_20260128_petrenko.pdf</loc>
+        <lastmod>2026-01-28</lastmod>
+        <changefreq>never</changefreq>
+        <priority>0.8</priority>
+    </url>
+</urlset>
