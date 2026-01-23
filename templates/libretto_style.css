@@ -1,0 +1,212 @@
+/* Berliner Librettos - PDF Styling */
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600&display=swap');
+
+/* Page setup */
+@page {
+    size: A4;
+    margin: 2.5cm 2cm;
+
+    @bottom-center {
+        content: counter(page);
+        font-family: 'Inter', sans-serif;
+        font-size: 10pt;
+        color: #666;
+    }
+}
+
+@page :first {
+    @bottom-center {
+        content: none;
+    }
+}
+
+/* Base styles */
+body {
+    font-family: 'Crimson Pro', Georgia, serif;
+    font-size: 11pt;
+    line-height: 1.6;
+    color: #1a1a1a;
+}
+
+.libretto {
+    max-width: 100%;
+}
+
+/* Headings */
+h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 24pt;
+    font-weight: 600;
+    color: #00234B;
+    margin-bottom: 0.5em;
+    text-align: center;
+    border-bottom: 2px solid #C9A227;
+    padding-bottom: 0.5em;
+}
+
+h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 16pt;
+    font-weight: 600;
+    color: #00234B;
+    margin-top: 2em;
+    margin-bottom: 0.3em;
+    page-break-after: avoid;
+}
+
+h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 13pt;
+    font-weight: 500;
+    color: #333;
+    margin-top: 0.5em;
+    margin-bottom: 0.3em;
+    page-break-after: avoid;
+}
+
+h4 {
+    font-family: 'Inter', sans-serif;
+    font-size: 11pt;
+    font-weight: 600;
+    color: #00234B;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    page-break-after: avoid;
+}
+
+/* Paragraphs */
+p {
+    margin-bottom: 1em;
+    text-align: justify;
+    hyphens: auto;
+}
+
+/* Concert info line (after h1) */
+h1 + p {
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 10pt;
+    color: #666;
+    margin-bottom: 2em;
+}
+
+h1 + p + p {
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 11pt;
+    font-style: italic;
+    color: #333;
+    margin-bottom: 2em;
+}
+
+/* Emphasis */
+em {
+    font-style: italic;
+}
+
+strong {
+    font-weight: 600;
+}
+
+/* Duration line */
+h3 + p em:first-child {
+    font-family: 'Inter', sans-serif;
+    font-size: 9pt;
+    color: #666;
+}
+
+/* Horizontal rules */
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 2em 0;
+}
+
+/* Lists */
+ul, ol {
+    margin-bottom: 1em;
+    padding-left: 1.5em;
+}
+
+li {
+    margin-bottom: 0.3em;
+}
+
+/* Blockquotes (for notable quotes) */
+blockquote {
+    margin: 1.5em 2em;
+    padding-left: 1em;
+    border-left: 3px solid #C9A227;
+    font-style: italic;
+    color: #444;
+}
+
+/* Footer note */
+.libretto > p:last-child {
+    margin-top: 3em;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 9pt;
+    font-style: italic;
+    color: #999;
+}
+
+/* Page break control */
+h2 {
+    page-break-before: auto;
+}
+
+h2, h3, h4 {
+    page-break-after: avoid;
+}
+
+p {
+    orphans: 3;
+    widows: 3;
+}
+
+/* Print optimizations */
+@media print {
+    body {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+}
+
+/* Support/Donation Section */
+.support-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 3em;
+    padding-top: 1.5em;
+    border-top: 1px solid #ddd;
+}
+
+.qr-code {
+    width: 80px;
+    height: 80px;
+}
+
+.support-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.support-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 10pt;
+    font-weight: 500;
+    color: #00234B;
+}
+
+.support-url {
+    font-family: 'Inter', sans-serif;
+    font-size: 8pt;
+    color: #666;
+}

@@ -1,0 +1,377 @@
+/* Concert Librettos - Website Styling */
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600;700&display=swap');
+
+/* CSS Variables */
+:root {
+    --color-primary: #00234B;
+    --color-gold: #C9A227;
+    --color-text: #1a1a1a;
+    --color-text-muted: #666;
+    --color-bg: #fafafa;
+    --color-white: #ffffff;
+    --font-serif: 'Crimson Pro', Georgia, serif;
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Reset & Base */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--color-gold);
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Header */
+header {
+    background: var(--color-primary);
+    color: var(--color-white);
+    padding: 60px 0 40px;
+    text-align: center;
+}
+
+header h1 {
+    font-family: var(--font-sans);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0 0 12px;
+    letter-spacing: -0.02em;
+}
+
+header .subtitle {
+    font-family: var(--font-serif);
+    font-size: 1.25rem;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+}
+
+header .gold-line {
+    width: 80px;
+    height: 3px;
+    background: var(--color-gold);
+    margin: 24px auto 0;
+}
+
+/* Navigation */
+nav {
+    background: var(--color-white);
+    border-bottom: 1px solid #e5e5e5;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav .container {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    padding: 16px 24px;
+}
+
+nav a {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--color-text-muted);
+}
+
+nav a:hover {
+    color: var(--color-primary);
+}
+
+/* Hero Section */
+.hero {
+    background: var(--color-white);
+    padding: 60px 0;
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.hero h2 {
+    font-family: var(--font-serif);
+    font-size: 1.75rem;
+    font-weight: 400;
+    color: var(--color-text);
+    margin: 0 0 24px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero p {
+    color: var(--color-text-muted);
+    max-width: 500px;
+    margin: 0 auto 32px;
+}
+
+/* Support Button */
+.support-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--color-gold);
+    color: var(--color-white);
+    padding: 14px 28px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.support-btn:hover {
+    background: #b8922a;
+    color: var(--color-white);
+    transform: translateY(-1px);
+}
+
+.support-btn svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* How It Works */
+.how-it-works {
+    padding: 60px 0;
+}
+
+.how-it-works h2 {
+    font-family: var(--font-sans);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    text-align: center;
+    margin: 0 0 40px;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 32px;
+}
+
+.step {
+    text-align: center;
+}
+
+.step-number {
+    width: 40px;
+    height: 40px;
+    background: var(--color-primary);
+    color: var(--color-white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    margin: 0 auto 16px;
+}
+
+.step h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 0 8px;
+    color: var(--color-text);
+}
+
+.step p {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    margin: 0;
+}
+
+/* Librettos Catalog */
+.catalog {
+    background: var(--color-white);
+    padding: 60px 0;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.catalog h2 {
+    font-family: var(--font-sans);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    text-align: center;
+    margin: 0 0 40px;
+}
+
+.month-section {
+    margin-bottom: 40px;
+}
+
+.month-section:last-child {
+    margin-bottom: 0;
+}
+
+.month-header {
+    font-family: var(--font-sans);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    border-bottom: 2px solid var(--color-gold);
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.concert-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.concert-card {
+    background: var(--color-bg);
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: box-shadow 0.2s ease;
+}
+
+.concert-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.concert-info h4 {
+    font-family: var(--font-serif);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0 0 4px;
+    color: var(--color-text);
+}
+
+.concert-info .date {
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+}
+
+.concert-info .conductor {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    font-style: italic;
+}
+
+.download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--color-primary);
+    color: var(--color-white);
+    padding: 10px 16px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: background 0.2s ease;
+}
+
+.download-btn:hover {
+    background: #003366;
+    color: var(--color-white);
+}
+
+.download-btn svg {
+    width: 16px;
+    height: 16px;
+}
+
+/* About Section */
+.about {
+    padding: 60px 0;
+}
+
+.about h2 {
+    font-family: var(--font-sans);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    text-align: center;
+    margin: 0 0 24px;
+}
+
+.about p {
+    max-width: 600px;
+    margin: 0 auto 16px;
+    text-align: center;
+    color: var(--color-text-muted);
+}
+
+/* Footer */
+footer {
+    background: var(--color-primary);
+    color: rgba(255, 255, 255, 0.7);
+    padding: 40px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0 0 8px;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: var(--color-gold);
+}
+
+footer a:hover {
+    color: #e0b83a;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header .subtitle {
+        font-size: 1rem;
+    }
+
+    nav .container {
+        gap: 20px;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .concert-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .download-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}

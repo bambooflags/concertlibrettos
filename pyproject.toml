@@ -1,0 +1,14 @@
+[project]
+name = "berliner-librettos"
+version = "0.1.0"
+description = "Concert libretto generator for Berliner Philharmonie"
+requires-python = ">=3.10"
+dependencies = [
+    "markdown>=3.5",
+    "pdfkit>=1.0.0",
+    "qrcode>=7.4",
+    "Pillow>=10.0",
+]
+
+[dependency-groups]
+dev = []
